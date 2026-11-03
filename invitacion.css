@@ -1,0 +1,107 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+#video-fondo{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.titulo{
+    text-align: center;
+    font-family: cursive;
+    color: #ff00ee;
+}
+.texto{
+    text-align: center;
+    font-size: 15px;
+    color: #00ffc8;
+}
+.cumplañera{
+    text-align: center;
+    color: #fff;
+    text-shadow: 
+    0 0 7px #ff00a0,
+    0 0 20px #ff00a0,
+    0 0 40px #ff00a0;
+    animation: flicker 5s infinite alternate;
+}
+@keyframes flicker{
+    0%, 18%, 22%, 25%, 53%, 57%, 100%{
+        text-shadow:
+        0 0 7px #ff00a0, 
+        0 0 20px #ff00a0,
+        0 0 40px #ff00a0;
+        opacity: 1;
+    }
+    20%, 24%, 55%{
+        text-shadow: none;
+        opacity: 0.6;
+    }
+}
+.tex{
+    text-align: center;
+    font-size:15px;
+    color: #00ffc8;
+}
+#num-edad{
+  text-align: center;
+  font-size: clamp(100px, 25vw, 300px);
+  font-weight: 900;
+  color: #ff00ee;
+  text-shadow: none;
+  display: block;
+  line-height: 1;
+  transition: transform 0.2s ease;
+}
+
+.texto-edad{
+  text-align: center;
+  font-size: 38px;
+  text-transform: uppercase;
+  letter-spacing: 8px;
+  font-weight: bold;
+  color: #00ffc8;
+}
+
+.despedida{
+  margin-top: 20px;
+  font-size: 15px;
+  text-align: center;
+  color: #00ffc8;
+}
+
+.dia{
+    margin-top: 20px;
+    font-size: 15px;
+    text-align: center;
+    color: #00ffc8
+}
+
+.ubicacion{
+    .calle{
+        text-align: center;
+        font-size:  27px;
+        color: #00ffc8;
+        margin-top: 20px;
+    }    
+    img{
+        display: block;
+        margin: 0 auto;
+        margin-top: 15px;
+        width: 150px;
+        height: 150px;
+    }
+    .ubicacion_QR{
+        text-align: center;
+        font-size: 27px;
+        color: #00ffc8;
+        margin-top: 20px;
+    }
+}
